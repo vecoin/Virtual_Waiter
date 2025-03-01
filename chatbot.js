@@ -1,5 +1,5 @@
 ﻿(function () {
-    const OPENAI_API_KEY = process.env.OPENAI_API_KEY2;  // Replace with your actual OpenAI API key
+    const OPENAI_API_KEY = process.env.KEY_API3;  // Replace with your actual OpenAI API key
     console.log(OPENAI_API_KEY); 
     const ASSISTANT_ID = "asst_GoUA2iVIVKi2xUCEvf9Lrjko";  // Virtual Weiter assistant ID
     const CHATBOT_NAME = "Virtual Waiter";
