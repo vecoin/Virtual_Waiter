@@ -11,6 +11,10 @@ jobs:
 
       - name: Set API Key as an environment variable
         run: echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+      - name: Debug API Key (Print First 5 Characters)
+        run: echo "API Key starts with:${API_KEY:0:5}"
+        
+       
 
       - name: Print API Key (For Debugging - Will Be Masked)
         run: echo "The API Key is:$API_KEY"
