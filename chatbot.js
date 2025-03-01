@@ -1,5 +1,5 @@
 ﻿(function () {
-    const OPENAI_API_KEY = "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";  // Replace with your actual OpenAI API key
+    const OPENAI_API_KEY = process.env.OPENAI_API_KEY;  // Replace with your actual OpenAI API key
     const ASSISTANT_ID = "asst_GoUA2iVIVKi2xUCEvf9Lrjko";  // Virtual Weiter assistant ID
     const CHATBOT_NAME = "Virtual Waiter";
     const AVATAR_URL = "https://vecoin.github.io/jshosting/logo_v3_blickbot.jpg";
