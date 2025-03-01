@@ -301,7 +301,7 @@
             waitingMessage.textContent = assistantResponse;
             scrollToBottom();
         } catch (error) {
-            console.error("❌ API Connection Error:", error);
+            console.error("❌ OpenAI API Error:", threadData.error?.message || threadData.error);;
             waitingMessage.textContent = "Error: Unable to connect.";
         }
     }
