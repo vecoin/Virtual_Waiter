@@ -1,6 +1,7 @@
 ﻿(function () {
     const OPENAI_API_KEY = process.env.KEY_API3;  // Replace with your actual OpenAI API key
-    console.log(OPENAI_API_KEY); 
+    console.log("API Key:", process.env.API_KEY3); // Will be masked in logs
+
     const ASSISTANT_ID = "asst_GoUA2iVIVKi2xUCEvf9Lrjko";  // Virtual Weiter assistant ID
     const CHATBOT_NAME = "Virtual Waiter";
     const AVATAR_URL = "https://vecoin.github.io/jshosting/logo_v3_blickbot.jpg";
