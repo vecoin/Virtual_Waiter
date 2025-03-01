@@ -1,6 +1,6 @@
 name: Example Workflow
 
-on: [push]  # Trigger on push, you can modify this as needed
+on: [push]  # This triggers the workflow on push events
 
 jobs:
   example-job:
@@ -9,10 +9,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Use API Key
+      - name: Set API Key as an environment variable
         run: echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
 
       - name: Print API Key (For Debugging - Will Be Masked)
         run: echo "The API Key is: $API_KEY"
