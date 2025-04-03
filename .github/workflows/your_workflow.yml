@@ -1,6 +1,6 @@
 name: Example Workflow
 
-on: [push]  # This triggers the workflow on push events 1
+on: [push]  # This triggers the workflow on push events 2
 
 jobs:
   example-job:
