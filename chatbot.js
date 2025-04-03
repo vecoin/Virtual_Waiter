@@ -1,6 +1,11 @@
 ﻿(function () {
-    const OPENAI_API_KEY = process.env.API_KEY;  // Replace with your actual OpenAI API key
-    console.log("API Key:", process.env.API_KEY); // Will be masked in logs
+    console.log(`API_KEY: ${process.env.API_KEY}`);
+    const OPENAI_API_KEY = process.env.API_KEY;
+    
+    if (!OPENAI_API_KEY) {
+      console.error('API_KEY is not defined!');
+      process.exit(1);
+    }
 
     const ASSISTANT_ID = "asst_GoUA2iVIVKi2xUCEvf9Lrjko";  // Virtual Weiter assistant ID
     const CHATBOT_NAME = "Virtual Waiter 2 X";
