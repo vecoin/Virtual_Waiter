@@ -21,10 +21,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./path-to-your-subdirectory
+        working-directory: ./Virtual_Waiter
 
       - name: Run tests
         run: npm test
-        working-directory: ./path-to-your-subdirectory
+        working-directory: ./Virtual_Waiter
         env:
           API_KEY: ${{ secrets.API_KEY }}
