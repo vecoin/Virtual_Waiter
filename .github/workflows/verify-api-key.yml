@@ -1,0 +1,20 @@
+name: Verify API Key
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print API Key
+        run: echo "API Key: ${{ secrets.YOUR_API_KEY_SECRET_NAME }}"
+
+      - name: Test API Key
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.YOUR_API_KEY_SECRET_NAME }}" https://api.yourservice.com/test-endpoint
