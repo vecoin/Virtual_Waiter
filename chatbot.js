@@ -3,7 +3,7 @@
     console.log("API Key:", process.env.API_KEY); // Will be masked in logs
 
     const ASSISTANT_ID = "asst_GoUA2iVIVKi2xUCEvf9Lrjko";  // Virtual Weiter assistant ID
-    const CHATBOT_NAME = "Virtual Waiter 2";
+    const CHATBOT_NAME = "Virtual Waiter 2 X";
     const AVATAR_URL = "https://vecoin.github.io/jshosting/logo_v3_blickbot.jpg";
 
     // Create chat UI elements
